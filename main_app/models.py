@@ -7,4 +7,4 @@ class Place(models.Model):
     location = models.CharField(max_length=80)
     information = models.CharField(max_length=100)
     review = models.CharField(max_length=80)
-    imgs = models
+    imgs = models.ImageField()

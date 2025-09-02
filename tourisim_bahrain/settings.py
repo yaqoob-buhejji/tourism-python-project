@@ -11,9 +11,15 @@ https://docs.djangoproject.com/en/5.2/ref/settings/
 """
 
 from pathlib import Path
+import os
+from dotenv import load_dotenv
+
+
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
+load_dotenv(BASE_DIR / ".env")
+
 
 
 # Quick-start development settings - unsuitable for production
@@ -76,13 +82,14 @@ WSGI_APPLICATION = 'tourisim_bahrain.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'tourism-website',  # Name of your PostgreSQL database
+        'NAME': os.getenv('Database'),  # same name as your .env file
         'USER': 'postgres',
-        'PASSWORD': 'yaqoob632005',
+        'PASSWORD': os.getenv('password '),
         'HOST': 'localhost',  
         'PORT': '5432',
     }
 }
+
 
 
 
@@ -121,8 +128,14 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/5.2/howto/static-files/
 
 STATIC_URL = 'static/'
+LOGIN_URL = "login"
+# LOGIN_REDIRECT_URL = ""       # after successful login
+LOGOUT_REDIRECT_URL = "login"     # after logout
+
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+
