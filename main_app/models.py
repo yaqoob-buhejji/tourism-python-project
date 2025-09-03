@@ -8,3 +8,6 @@ class Place(models.Model):
     information = models.CharField(max_length=100)
     review = models.CharField(max_length=80)
     imgs = models.ImageField()
+
+    class Meta:
+        db_table = "places"

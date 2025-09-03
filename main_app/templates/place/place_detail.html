@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% block content %}
+<h1>{{ place.name }}</h1>
+
+<form method='post' action="{% url 'place_delete' place.pk %}">
+    {% csrf_token %}
+    <button>Delete</button>
+</form>
+<a href="{% url 'place_update' place.pk %}">update</a>
+{% endblock %}

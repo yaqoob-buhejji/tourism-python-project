@@ -1,4 +1,9 @@
-{% comment %} {%extends base.html%} {% endcomment %}
+{%extends 'base.html'%}
 {%block content %}
 <h1>Place form</h1>
+<form method="post" enctype='multipart/form-data'>
+    {% csrf_token %}
+    {{form.as_p}}
+    <button type ='submit'{{form.instance.pk|yesno:"Update, Create"}}>Create</button>
+</form>
 {%endblock%}

@@ -6,8 +6,9 @@
     <nav>
       {% if user.is_authenticated %}
       Welcome, {{user.username}} | 
-      {% comment %} <a href="{% url '' %}"></a> |
-      <a href="{% url '' %}"></a> | {% endcomment %}
+      <a href="{% url 'Home' %}">Home</a> |
+      <a href="{% url 'place_create' %}">Creat a place</a> |
+      <a href="{% url 'place_list' %}">Places list</a>  
       <form action="" method="post">
         {% csrf_token %}
         <button>Logout</button>
@@ -16,10 +17,6 @@
       {% else %}
 
       {% endif %}
-      {% comment %} <a href="{% url '' %}"></a> |
-      <a href="{% url '' %}"></a> | {% endcomment %}
-
-
     </nav>
     <hr>
     {% block content %}{% endblock %}
