@@ -10,5 +10,7 @@ urlpatterns = [
       path("places/<int:pk>/", views.PlaceDetail.as_view(), name="place_detail"),
       path("places/<int:pk>/delete/", views.PlaceDelete.as_view(), name="place_delete"),
       path("places/<int:pk>/edit/", views.PlaceUpdate.as_view(), name="place_update"),
+      path('auth/signup/', views.SignUpView.as_view() , name="SignUp"),
+
 ]
 

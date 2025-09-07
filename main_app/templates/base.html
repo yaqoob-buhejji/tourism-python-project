@@ -9,13 +9,14 @@
       <a href="{% url 'Home' %}">Home</a> |
       <a href="{% url 'place_create' %}">Creat a place</a> |
       <a href="{% url 'place_list' %}">Places list</a>  
-      <form action="" method="post">
+      <form action="/auth/logout/" method="post">
         {% csrf_token %}
         <button>Logout</button>
       </form>
 
       {% else %}
-
+      <a href="{% url 'SignUp' %}">Sign Up</a> |
+      <a href="/auth/login/">Sign In</a>  
       {% endif %}
     </nav>
     <hr>

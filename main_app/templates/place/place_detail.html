@@ -1,6 +1,10 @@
 {% extends "base.html" %}
 {% block content %}
 <h1>{{ place.name }}</h1>
+<p>{{ place.location }}</p>
+<p>{{ place.information }}</p>
+<p>{{ place.review }}</p>
+<img src="{{ place.imgs.url }}" alt="place" />
 
 <form method='post' action="{% url 'place_delete' place.pk %}">
     {% csrf_token %}
