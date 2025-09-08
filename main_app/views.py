@@ -21,6 +21,13 @@ class PlaceCreate(CreateView):
     form_class= PlaceForm
     template_name = "place/place_form.html"
 
+    def form_valid(self, form):
+        
+        form = super().form_valid(form)
+        form['creator'] = self.request.creator
+        return form
+    
+
     def get_success_url(self):
         return reverse("place_detail", kwargs={"pk": self.object.pk})
 
