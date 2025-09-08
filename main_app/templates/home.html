@@ -1,9 +1,10 @@
 {% extends "base.html" %}
-{%load static%}
-{%block head%}
+{% load static %}
+{% block head %}
 
-<link rel = "stylesheet" href = {% static'hone.css'%}
-
+<link rel="stylesheet" href="{% static 'home.css' %}" />
+{% endblock %}
 {% block content %}
     <h1>Home page</h1>
+    <img  class="homepageImg" src="{% static "homepage.jpeg" %}" alt="souq al baraha">
 {% endblock  %}
