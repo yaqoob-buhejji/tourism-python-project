@@ -9,6 +9,8 @@
   </head>
   <body>
     <nav>
+      
+      
       {% if user.is_authenticated %}
       Welcome, {{user.username}} | 
       <a href="{% url 'Home' %}">Home</a> |
@@ -18,10 +20,12 @@
         {% csrf_token %}
         <button>Logout</button>
       </form>
-
+      
       {% else %}
       <a href="{% url 'SignUp' %}">Sign Up</a> |
       <a href="/auth/login/">Log In</a>
+      <a href="{% url 'Home' %}">Home</a> |
+      <a href="{% url 'place_list' %}">Places list</a>  
       
       {% endif %}
     </nav>

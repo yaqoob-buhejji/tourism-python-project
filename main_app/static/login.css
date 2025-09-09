@@ -1,0 +1,89 @@
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color:#c8cfd3c6 ;
+}
+
+input {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #1187b2;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+img {
+  width: 20%;
+  border-radius: 50%;
+  text-align: center;
+  margin: 24px 0 12px 0;
+}
+
+.nav{
+    background-color: white;
+    padding: 8px;
+    font-weight: bold;
+    overflow: hidden;
+    border: 3px solid black;
+}
+
+.nav a {
+    text-decoration: none;
+    padding: 10px;
+    font-size: 17px;
+    color: black;
+}
+
+.nav a:hover {
+    color: red;
+}
+
+.login{
+    text-align: center;
+    border: solid white;
+    border-radius: 30px;
+    background-color: white;
+      box-shadow:  0 6px 20px 0 rgba(0, 0, 0, 0.78);
+    padding: 30px 90px;
+    margin-top: 100px;
+}
+
+.login h1{
+    color: rgb(14, 127, 135);
+}
+
+.login button{
+    background-color: rgb(14, 127, 135);
+    border-radius: 16px;
+    color: white;
+}
+
+.login-elm{
+    display: flex;
+}
+
+.bahrainimg{
+    margin-bottom: 10px;
+    padding-left: 30px;
+    display: block;
+}
+
+.signup{
+    border: solid white;
+}

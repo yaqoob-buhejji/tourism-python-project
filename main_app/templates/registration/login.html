@@ -1,19 +1,32 @@
 {% extends "base.html" %}
+{% load static %}
+{% block head %}
+<link rel="stylesheet" href="{% static 'login.css' %}" />
+
+{% endblock head %}
 {% block content %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
 <body>
-    <h1>Login</h1>
-    <form method="post">
-        {% csrf_token %}
-        {{form.as_p}}
-        <button>Sign In</button>
-    </form>
+    <div class="login-elm">
+        <div class="login">
+        <h1>Login</h1>
+        <form method="post">
+            {% csrf_token %}
+            {{form.as_p}}
+            <button>Sign In</button>
+        </form>
+    </div>
+    <div class="bahrainimg">
+    <img src="{% static "bahrain.png" %}" alt="Bahrain img">
+    </div>
+    </div>
 </body>
 </html>
 {% endblock %}
