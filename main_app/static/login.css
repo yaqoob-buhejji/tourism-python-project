@@ -85,5 +85,11 @@ img {
 }
 
 .signup{
-    border: solid white;
+    border: solid white ;
+    padding: 15px;
+    background-color: white;
+    box-shadow:  0 6px 20px 0 rgba(0, 0, 0, 0.78);
+    border-radius: 30px;
+
+
 }

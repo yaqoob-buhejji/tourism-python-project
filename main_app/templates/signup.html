@@ -13,7 +13,7 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="signup"></div>
+    <div class="signup">
     <h1>Sign up</h1>
     <form method="post">
         {% csrf_token %}
@@ -24,6 +24,7 @@
         <input name='password' id='password' type="password">  {% endcomment %}
         <button>Sign up</button>
     </form>
+    </div>
 </body>
 </html>
 {% endblock %}
