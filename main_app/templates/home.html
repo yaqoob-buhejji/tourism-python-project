@@ -5,6 +5,22 @@
 <link rel="stylesheet" href="{% static 'home.css' %}" />
 {% endblock %}
 {% block content %}
+<div class="homepage-title">
     <h1>Home page</h1>
-    <img  class="homepageImg" src="{% static "homepage.jpeg" %}" alt="souq al baraha">
+</div>
+
+<div class="homecontainer"> 
+    <div class="parent-container">
+        <div class="h3-home">
+            <h3><span>Discover breathtaking landscapes and unforgettable experiences</span>
+                <br>
+                <br>
+                Whether you’re seeking adventure, relaxation, or a journey through history, Bahrain offers something special for every traveler.</h3>
+            </div>
+            <div class="image-homepage">
+                <img class="homepageImg" src="{% static "homepage.jpeg" %}" alt="souq al baraha">
+            </div>
+        </div>
+</div>
+<button>Add Your Tour</button>
 {% endblock  %}

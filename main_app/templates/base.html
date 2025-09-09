@@ -14,7 +14,7 @@
       {% if user.is_authenticated %}
       Welcome, {{user.username}} | 
       <a href="{% url 'Home' %}">Home</a> |
-      <a href="{% url 'place_create' %}">Creat a place</a> |
+      <a href="{% url 'place_create' %}">Add Your Tour</a> |
       <a href="{% url 'place_list' %}">Places list</a>  
       <form action="/auth/logout/" method="post">
         {% csrf_token %}
