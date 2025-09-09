@@ -22,5 +22,12 @@
             </div>
         </div>
 </div>
-<button>Add Your Tour</button>
+
+{% if user.is_authenticated %}
+ {{form.as_p}}
+<div class="button-create">
+    <button><a href="{% url 'place_create' %}">Add Your Tour</a></button>
+</div>
+ {% endif %}
+
 {% endblock  %}

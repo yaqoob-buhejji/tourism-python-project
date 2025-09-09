@@ -1,5 +1,5 @@
  *{
-    background-color: rgb(222, 222, 199);
+    background-color: rgb(223, 223, 203);
    
 }
 
@@ -50,9 +50,20 @@ h1{
   margin-left: 100px
 }
 
+button a {
+  text-decoration: none;
 
+}
 
-
+.button-create button {
+  background-color:rgba(169, 160, 160, 0.959);
+  padding: 15px;
+  border-radius: 5px;
+}
+.button-create a {
+  background-color:rgba(169, 160, 160, 0.959);
+  color: black
+}
 
 
 

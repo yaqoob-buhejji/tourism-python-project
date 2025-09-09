@@ -22,10 +22,9 @@ class PlaceCreate(CreateView):
     template_name = "place/place_form.html"
 
     def form_valid(self, form):
-        
-        form = super().form_valid(form)
-        form['creator'] = self.request.creator
-        return form
+        form.instance.creator = self.request.user
+        form.save()
+        return super().form_valid(form)
     
 
     def get_success_url(self):

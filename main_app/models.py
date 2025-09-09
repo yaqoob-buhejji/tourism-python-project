@@ -8,7 +8,7 @@ class Place(models.Model):
     information = models.CharField(max_length=100)
     review = models.CharField(max_length=80)
     imgs = models.ImageField(upload_to='images/', null=True)
-    creator = models.ForeignKey(User, on_delete=models.CASCADE, related_name='places')
+    creator = models.ForeignKey(User, on_delete=models.CASCADE, related_name='places', null=True)
     
     class Meta:
         db_table = "places"
