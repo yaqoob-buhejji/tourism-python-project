@@ -1,0 +1,20 @@
+
+body{
+background-color: rgb(189, 176, 176);
+}
+
+.details-information{
+    border: solid black;
+    width: 500px;
+    margin: auto;
+    margin-top: 10px;
+    background-color: rgb(227, 217, 217);
+    padding: 50px;
+    font-size: large;
+}
+
+
+
+.details-information img{
+    width: 35%;
+}

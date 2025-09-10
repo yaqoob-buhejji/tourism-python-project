@@ -5,11 +5,15 @@
 {% block head %}
 <link rel="stylesheet" href="{% static 'place-detail.css' %}" />
 {% endblock %}
-<h1>{{ place.name }}</h1>
-<p>{{ place.location }}</p>
-<p>{{ place.information }}</p>
-<p>{{ place.review }}</p>
-<img src="{{ place.imgs.url }}" alt="place" />
+
+<div class="details-information">
+    <h1>Name: {{ place.name }}</h1>
+    <p>Location: {{ place.location }}</p>
+    <p>Information: {{ place.information }}</p>
+    <p>Review: {{ place.review }}</p>
+
+    <img src="{{ place.imgs.url }}" alt="place" />
+</div>
 
 
 
