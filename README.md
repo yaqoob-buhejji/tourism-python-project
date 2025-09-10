@@ -83,7 +83,6 @@ It is a website that the user can discover the places that are interesting like 
 
 Yaqoob Buhejji -  email:yaqoob.buhejji@gmail.com
 
-Project Link: [https://github.com/yaqoob-buhejji/Poem-project-2]
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
