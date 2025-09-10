@@ -10,10 +10,10 @@ margin: auto  ;
 margin-top: 70px;
 background-color:  rgb(219, 62, 62);
 color: white;
-padding: 70px;
+padding: 100px;
 border-radius: 10px;
 box-shadow:  0 6px 20px 0 rgba(0, 0, 0, 0.78);
-font-size:large;
+font-size:x-large;
 }
 
 .place-list > ul >li{

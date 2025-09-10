@@ -52,12 +52,19 @@ h1{
 button a {
   text-decoration: none;
 
+
+}
+
+.button-create {
+  display: flex;
+  justify-content: center;
 }
 
 .button-create button {
   background-color:rgba(169, 160, 160, 0.959);
   padding: 15px;
   border-radius: 5px;
+  align-items:center ;
 }
 .button-create a {
   background-color:rgba(169, 160, 160, 0.959);
