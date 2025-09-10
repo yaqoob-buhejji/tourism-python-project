@@ -1,0 +1,29 @@
+
+.title-placeform{
+text-align: center;
+
+}
+
+.place-form{
+    text-align: center;
+    border: solid black;
+    border-radius: 10px;
+    background-color: rgba(211, 168, 168, 0.959);
+    width: 500px;
+    padding: 20px;
+    margin: auto;
+
+    /* display: flex;
+    justify-self: center;
+align-items: center; 
+    justify-content: center;  */
+
+}
+
+
+body{
+    background-image: url("https://i.pinimg.com/736x/a9/de/3d/a9de3dacff5b9038ca2212a99f81255d.jpg");
+     /* background-size: 100% 200%; */
+     /* background-repeat: no-repeat; */
+ /* Optional, to prevent tiling */
+}

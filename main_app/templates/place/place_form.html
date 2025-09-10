@@ -1,9 +1,18 @@
 {%extends 'base.html'%}
 {%block content %}
+{% load static %}
+{% block head %}
+<link rel="stylesheet" href="{% static 'place-form.css' %}" />
+{% endblock %}
+<div class="place-form">
+{% comment %} <div class="title-placeform"> {% endcomment %}
 <h1>Place form</h1>
+
+
 <form method="post" enctype='multipart/form-data'>
     {% csrf_token %}
     {{form.as_p}}
     <button type ='submit'{{form.instance.pk|yesno:"Update, Create"}}>Create</button>
 </form>
+</div>
 {%endblock%}
