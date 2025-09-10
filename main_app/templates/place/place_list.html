@@ -1,5 +1,10 @@
 {% extends "base.html" %}
 {% block content %}
+{% load static %}
+{% block head %}
+<link rel="stylesheet" href="{% static 'place-lists.css' %}" />
+{% endblock %}
+<div class="place-list">
 <h1>Places</h1>
 <ul>
   {% for place in places %}
@@ -9,5 +14,5 @@
   {% empty %}
     <li>No places yet.</li>
   {% endfor %}
-</ul>
+</ul></div>
 {% endblock %}

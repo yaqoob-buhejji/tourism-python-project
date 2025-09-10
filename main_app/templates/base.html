@@ -4,8 +4,8 @@
   <head>
     <meta charset="utf-8">
     <title>Authors</title>
-
-    {% block head %}{% endblock head %}
+    <link rel="stylesheet" href="{% static 'base.css' %}" />
+    {% block head %}{% endblock %}
   </head>
   <body>
     <nav>
@@ -29,7 +29,6 @@
       
       {% endif %}
     </nav>
-    <hr>
     {% block content %}{% endblock %}
   </body>
 </html>

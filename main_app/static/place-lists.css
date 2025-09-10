@@ -1,0 +1,16 @@
+body{
+    background-image: url("https://i.pinimg.com/736x/a5/6e/25/a56e25b0d56a604dfcc68d54a1b7db65.jpg");
+    /* background-size: 600% 1200%; */
+}
+
+.place-list{
+border: solid white;
+width: 150px;
+margin: auto  ;
+margin-top: 70px;
+background-color:  rgb(219, 62, 62);
+color: white;
+padding: 70px;
+border-radius: 10px;
+box-shadow:  0 6px 20px 0 rgba(0, 0, 0, 0.78);
+}
