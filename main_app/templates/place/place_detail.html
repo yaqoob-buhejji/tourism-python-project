@@ -7,10 +7,10 @@
 {% endblock %}
 
 <div class="details-information">
-    <h1>Name: {{ place.name }}</h1>
-    <p>Location: {{ place.location }}</p>
-    <p>Information: {{ place.information }}</p>
-    <p>Review: {{ place.review }}</p>
+    <h1><span>Name:</span> {{ place.name }}</h1>
+    <p><span>Location:</span> {{ place.location }}</p>
+    <p><span>Information:</span> {{ place.information }}</p>
+    <p><span>Review:</span> {{ place.review }}</p>
 
     <img src="{{ place.imgs.url }}" alt="place" />
 </div>

@@ -6,15 +6,22 @@ background-color: rgb(189, 176, 176);
 .details-information{
     border: solid black;
     width: 500px;
-    margin: auto;
+    margin: 0 auto;
     margin-top: 10px;
     background-color: rgb(227, 217, 217);
     padding: 50px;
     font-size: large;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 
 
 .details-information img{
-    width: 35%;
+    width: 80%;
+}
+
+.details-information span {
+    font-weight: bold;
 }
