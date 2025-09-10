@@ -24,11 +24,11 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/yaqoob-buhejji/Poem-project-2">
-    <img src="./public/imgs/homepage-project2.png">
+  <a href="https://github.com/yaqoob-buhejji/tourism-python-project">
+    <img src="./main_app/static/Screenshot 2025-09-10 150510.png">
   </a>
 
-<h3 align="center">Poem Project</h3>
+<h3 align="center">Tourism-Python-Project</h3>
 
   <p align="center">
    
@@ -41,17 +41,12 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-It is a website that the user can create his own poem by writing the author name(The author of the poem name) , the reference is  like from where they got this poem whether they did it or they found it.
-
-
-
+It is a website that the user can discover the places that are interesting like tradional places or entertainment places in Bahrain that the user can view from the user response (place list)of the users and he can create a tour if he went to a place in Bahrain and found it interesting he can upload it so the other users know more about the places in Bahrain.
 
 
 
 <!-- GETTING STARTED -->
-## How to use the website
 
-He will log in with an email and his own password, then he will write the poem, then he can access all the poems that the user wrote, by then he can edit his poem by clicking update, then it will update what he have wrote. Then he can delete if he didn't like.
 
 ### Apps Used
 - Visual Studio Code
@@ -64,6 +59,8 @@ He will log in with an email and his own password, then he will write the poem, 
 - Javascript
 - Html
 - CSS
+- Python
+
 
 
 
@@ -75,9 +72,6 @@ He will log in with an email and his own password, then he will write the poem, 
 
 
 <!-- CONTRIBUTING -->
-## The website link
-https://poem-project-2.onrender.com/auth/login
-
 
 
 
