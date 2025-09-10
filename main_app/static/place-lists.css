@@ -7,16 +7,17 @@ body{
 border: solid white;
 width: 150px;
 margin: auto  ;
-margin-top: 70px;
+margin-top: 40px;
 background-color:  rgb(219, 62, 62);
 color: white;
-padding: 100px;
+padding: 80px;
 border-radius: 10px;
 box-shadow:  0 6px 20px 0 rgba(0, 0, 0, 0.78);
-font-size:x-large;
+font-size:23px;
 }
 
 .place-list > ul >li{
     color: white;
+    margin-bottom: 20px;
 
 }
